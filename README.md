@@ -1,5 +1,13 @@
 # Stripped-down LSST Alert Production for simulated lensed transients
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+**In short:** generates realistic, labelled training data for rare-event detectors. It runs the
+survey's own production image-processing steps (PSF-matched image differencing, object detection
+and measurement, cross-visit association, two CNN quality scores) on small simulated image cutouts
+instead of full frames, so it scales, and documents where it matches production and where it
+differs.
+
 ## Goal
 
 Work out how **DIASources** (the detections that become alerts) and **DIAObjects** (the objects
@@ -137,3 +145,7 @@ the version you run.
 This file covers *what is run and how*. The scientific discussion — what the results mean for
 lensed transients, where the stripped-down version is and is not equivalent to production, and the
 limits of that equivalence — is documented separately.
+
+## License
+
+MIT, see [LICENSE](LICENSE). The models in `rb_models/` are Rubin Observatory's and keep their own terms.
